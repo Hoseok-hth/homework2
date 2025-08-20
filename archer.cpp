@@ -15,7 +15,7 @@ void Archer::attack(Monster* monster)
 
 	monHP = monster->getHP();
 	damage = getPower() - monster->getDefence();
-	damage = damage / 5;
+	damage = damage / 3;
 	if (damage <= 0) {
 		damage = 1;
 	}

@@ -10,6 +10,7 @@ using namespace std;
 int main() {
     string jobs[] = { "전사", "마법사", "도적", "궁수" };
     int job_choice = 0;
+    int turn = 0;
     string nickname;
 
     Player* player = nullptr;
@@ -50,8 +51,27 @@ int main() {
     //player->attack();
     player->printPlayerStatus();
     Monster* monster = new Monster("슬라임");
-    monster->attack(player);
-    player->attack(monster);
+
+    while(true) {
+        cout << "공격권을 선택하세요 1." << player->getNickname() << " 2. " << monster->getName() << endl;
+        cin >> turn;
+        if (turn == 1) {
+            player->attack(monster);
+        }
+        else if (turn == 2) {
+            monster->attack(player);
+        }
+        else {
+            cout << "1 또는 2 를 골라주세요" << endl;
+            continue;
+        }
+        if (player->getHP() == 0 || monster->getHP() == 0) {
+            break;
+        }
+    }
+
+   
+    
 
     delete player;
 

@@ -4,8 +4,8 @@
 #define DEFAULT_MP 100
 #define DEFAULT_POWER 10
 #define DEFAULT_DEFENCE 10
-#define DEFAULT_ACCURACY 10
-#define DEFAULT_SPEED 10
+#define DEFAULT_ACCURACY 5
+#define DEFAULT_SPEED 5
 using namespace std;
 #include"monster.h"
 

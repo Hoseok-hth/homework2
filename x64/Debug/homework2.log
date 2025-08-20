@@ -1,5 +1,6 @@
 ﻿  archer.cpp
   magichian.cpp
+  main.cpp
   monster.cpp
   player.cpp
   thief.cpp

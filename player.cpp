@@ -58,8 +58,14 @@ void Player::setNickname(string nickname) {
 }
 
 bool Player::setHP(int HP) {
-    this->HP = HP;
-    return true;
+    if (HP > 0) {
+        this->HP = HP;
+        return true;
+    }
+    else {
+        this->HP = 0;
+        return false;
+    }
 }
 
 bool Player::setMP(int MP) {
