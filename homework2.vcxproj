@@ -132,7 +132,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="archer.cpp" />
-    <ClCompile Include="magichian.cpp" />
+    <ClCompile Include="magician.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="monster.cpp" />
     <ClCompile Include="player.cpp" />

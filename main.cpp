@@ -74,6 +74,7 @@ int main() {
     
 
     delete player;
+    delete monster;
 
 
     return 0;

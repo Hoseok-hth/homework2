@@ -47,7 +47,7 @@
     <ClCompile Include="archer.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="magichian.cpp">
+    <ClCompile Include="magician.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="thief.cpp">
